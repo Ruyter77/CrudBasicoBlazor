@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\pasteleriaWebapp.Server.props" />
+</Project>
