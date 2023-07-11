@@ -1,0 +1,34 @@
+﻿@page "/productos/editar/{Id:int}"
+@using pasteleriaWebapp.Client.Shared.ProductoComponentes
+@using pasteleriaWebapp.Shared
+@inject NavigationManager NavigationManager
+@inject HttpClient HttpClient
+
+
+<h3>Editar Producto</h3>
+
+<ProductoEdit Producto="Producto" OnGrabarClick="Grabar"/>
+
+
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    public Producto Producto { get; set; } = new Producto();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var respuesta = await HttpClient.GetFromJsonAsync<Producto>($"api/Productos/{Id}");
+        if(respuesta is not null)
+        {
+            Producto = respuesta;
+        }
+    }
+
+    private async Task Grabar()
+    {
+        await HttpClient.PutAsJsonAsync($"api/Productos/{Id}", Producto);
+        NavigationManager.NavigateTo("/Productolista");
+    }
+}

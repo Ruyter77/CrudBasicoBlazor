@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eWG3wwQp+0oaz6n0OF+zP3N0M6UvjK+2Jafe85W9u4fAHvY27ZokkZ6JaA6npo4/o3fWufGkpUwTQec+ggFNUw==",
+  "dgSpecHash": "yOX55iQGMVWl2mCeMXFixFiW0d73G/HKuTWIatWhBhiKwnhiN+JRXtOlm8uF8ohIyhxUFVFqVhRqH5lHn0CHxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\pasteleriaWebapp\\Client\\pasteleriaWebapp.Client.csproj",
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\CrudBasicoBlazor\\Client\\pasteleriaWebapp.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\microsoft.aspnetcore.authorization.7.0.5.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.5\\microsoft.aspnetcore.components.7.0.5.nupkg.sha512",
@@ -31,7 +31,7 @@
     "C:\\Users\\user\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.5.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.7\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.7.nupkg.sha512"
   ],
   "logs": []
 }

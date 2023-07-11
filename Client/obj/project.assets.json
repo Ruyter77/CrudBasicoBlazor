@@ -1833,11 +1833,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\pasteleriaWebapp\\Client\\pasteleriaWebapp.Client.csproj",
+      "projectUniqueName": "C:\\Users\\user\\source\\repos\\CrudBasicoBlazor\\Client\\pasteleriaWebapp.Client.csproj",
       "projectName": "pasteleriaWebapp.Client",
-      "projectPath": "C:\\Users\\user\\source\\repos\\pasteleriaWebapp\\Client\\pasteleriaWebapp.Client.csproj",
+      "projectPath": "C:\\Users\\user\\source\\repos\\CrudBasicoBlazor\\Client\\pasteleriaWebapp.Client.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\pasteleriaWebapp\\Client\\obj\\",
+      "outputPath": "C:\\Users\\user\\source\\repos\\CrudBasicoBlazor\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1859,8 +1859,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\user\\source\\repos\\pasteleriaWebapp\\Shared\\pasteleriaWebapp.Shared.csproj": {
-              "projectPath": "C:\\Users\\user\\source\\repos\\pasteleriaWebapp\\Shared\\pasteleriaWebapp.Shared.csproj"
+            "C:\\Users\\user\\source\\repos\\CrudBasicoBlazor\\Shared\\pasteleriaWebapp.Shared.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\repos\\CrudBasicoBlazor\\Shared\\pasteleriaWebapp.Shared.csproj"
             }
           }
         }
@@ -1899,7 +1899,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[7.0.5, 7.0.5]"
+            "version": "[7.0.7, 7.0.7]"
           }
         ],
         "frameworkReferences": {
@@ -1907,7 +1907,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

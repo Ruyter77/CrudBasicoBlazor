@@ -1,0 +1,60 @@
+﻿@page "/Productolista"
+@inject HttpClient HttpClient
+@using pasteleriaWebapp.Shared
+@inject NavigationManager NavigationManager
+
+
+
+<h3>Lista De Productos</h3>
+
+@if (Productos is null)
+{
+    <p>La lista esta vacia</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id Producto</th>
+                <th>Nombre</th>
+                <th>Decripcion</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Productos)
+            {
+                <tr>
+                    <td>@item.IdProducto</td>
+                    <td>@item.Nombre</td>
+                    <td>@item.Descripcion</td>
+                    <td>
+                        <button class="btn btn-primary" @onclick="() => Editar(item.IdProducto)"><i class="oi oi-pencil"></i></button>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+    <button class="btn btn-primary"@onclick="CrearProducto">Crear un Registro</button>
+}
+
+@code {
+    public List<Producto>? Productos { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Productos = await HttpClient.GetFromJsonAsync<List<Producto>>("api/Productos");
+    }
+
+    private void CrearProducto()
+    {
+        NavigationManager.NavigateTo("/productos/crear");
+    }
+    private void Editar(int id)
+    {
+        NavigationManager.NavigateTo($"/productos/editar/{id}");
+    }
+}

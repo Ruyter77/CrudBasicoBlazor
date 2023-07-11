@@ -12,23 +12,40 @@ namespace pasteleriaWebapp.Server.Servicios
         {
             listaProductos = new List<Producto>()
             {
-                new Producto() {IdProducto = 1, Nombre = "Harina", descripcion = "harina sin preparar"},
-                new Producto() { IdProducto = 2, Nombre = "Mantequilla", descripcion = "Mantequilla sin sal" },
+                new Producto() {IdProducto = 1, Nombre = "Harina", Descripcion = "harina sin preparar"},
+                new Producto() { IdProducto = 2, Nombre = "Mantequilla", Descripcion = "Mantequilla sin sal" },
             };
         }
 
 
         [HttpGet]
-        public List<Producto> listar()
+        public List<Producto> Listar()
         {
             return listaProductos;
         }
 
         [HttpPost]
-        public void agregar(Producto producto)
+        public void Agregar(Producto producto)
         {
             producto.IdProducto = listaProductos.Count + 1;
             listaProductos.Add(producto);
+        }
+
+        public void Actualizar(int id,Producto producto)
+        {
+            var registroExistente = ObtenerPorId(id);
+            if(registroExistente !=null)
+            {
+                registroExistente.Nombre = producto.Nombre;
+                registroExistente.Descripcion = producto.Descripcion;
+               
+            }
+
+            
+        }
+        public Producto? ObtenerPorId(int id)
+        {
+            return listaProductos.Find(p => p.IdProducto == id);
         }
     }
 }

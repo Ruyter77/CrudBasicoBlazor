@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oTxyezwzhkyQLhzr8jqJAVUzQgoE7zDu0x2Cvzjhi0KHxVU2FXf4vmdiHdwlIE77QgIJu+gVjtloUCer1Tdgkw==",
+  "dgSpecHash": "+sUY3ARLnBo/Q7ww19hGVigyQ5oa3JP3HDJbHBeR813cAW1WNZm4hzbUmeYwypThE158SMstCDaI7TvULpsnvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\pasteleriaWebapp\\Server\\pasteleriaWebapp.Server.csproj",
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\CrudBasicoBlazor\\Server\\pasteleriaWebapp.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\microsoft.aspnetcore.authorization.7.0.5.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.5\\microsoft.aspnetcore.components.7.0.5.nupkg.sha512",

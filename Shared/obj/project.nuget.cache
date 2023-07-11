@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cra1gJO2XFtR4sab0h0Pj7qvxSMKgHtE8z680qTHbEmyrupMBORc3PuIAWxhHc1FvygI5xLNYYSWH52aPqxNFw==",
+  "dgSpecHash": "J7VXR3WObSM0ZfyPbi9FqyvE9Ly77zn69xM4h/z1GGClKc5L14SEPguvbJllmASW56gmai5qKZMLhBEzaFJCUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\pasteleriaWebapp\\Shared\\pasteleriaWebapp.Shared.csproj",
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\CrudBasicoBlazor\\Shared\\pasteleriaWebapp.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

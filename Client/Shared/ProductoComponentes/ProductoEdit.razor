@@ -1,0 +1,35 @@
+﻿@using pasteleriaWebapp.Shared;
+
+
+
+<EditForm Model="Producto" OnSubmit="Grabar">
+    <div class="container">
+        <div>
+            <label for="nombre">Nombres</label>
+            <input type="text" class="form-control" @bind-value="Producto.Nombre" id="nombre" />
+        </div>
+        <div>
+            <label for="descripcion">Descripcion</label>
+            <input type="text" class="form-control" @bind-value="Producto.Descripcion" id="descripcion" />
+        </div>
+        <button class="btn btn-primary" type="submit">Grabar</button>
+    </div>
+
+</EditForm>
+
+
+
+
+
+@code {
+    [Parameter]
+    public Producto? Producto { get; set; } = new Producto();
+
+    [Parameter]
+    public EventCallback OnGrabarClick { get; set; }
+
+    private void Grabar()
+    {
+        OnGrabarClick.InvokeAsync();
+    }
+}

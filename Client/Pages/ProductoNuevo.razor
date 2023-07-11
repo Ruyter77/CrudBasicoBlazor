@@ -1,0 +1,24 @@
+﻿@page "/productos/crear"
+@using pasteleriaWebapp.Client.Shared.ProductoComponentes
+@using pasteleriaWebapp.Shared;
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager
+
+
+<h3>Crear Producto</h3>
+
+<ProductoEdit Producto="Producto" OnGrabarClick="Crear">
+
+</ProductoEdit>
+
+
+@code {
+    public Producto Producto { get; set; } = new Producto();
+
+    private async Task Crear()
+    {
+        await HttpClient.PostAsJsonAsync("/api/Productos", Producto);
+        NavigationManager.NavigateTo("/Productolista");
+    }
+    
+}

@@ -10,7 +10,7 @@ namespace pasteleriaWebapp.Shared
     {
         public int IdProducto { get; set; }
         public string Nombre { get; set; } = null!;
-        public string descripcion { get; set; } = null!;
+        public string Descripcion { get; set; } = null!;
 
     }
 }
