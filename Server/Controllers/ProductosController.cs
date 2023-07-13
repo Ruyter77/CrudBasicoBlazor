@@ -45,7 +45,12 @@ namespace pasteleriaWebapp.Server.Controllers
             }
             return Ok(registro);
         }
-
+        [HttpDelete("{id:int}")]
+        public IActionResult Eliminar(int id)
+        {
+            _servicios.Eliminar(id);
+            return Ok();
+        }
 
 
     }

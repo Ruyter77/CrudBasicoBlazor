@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yOX55iQGMVWl2mCeMXFixFiW0d73G/HKuTWIatWhBhiKwnhiN+JRXtOlm8uF8ohIyhxUFVFqVhRqH5lHn0CHxQ==",
+  "dgSpecHash": "acgNM/gUt1FzOal/H8rpyvtVGbxDsTmnWkD4iUeW/zZl1LXm/p+JNTmrSYS0jl5T0LTV6evtpXX9ik5a8/82Cw==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\repos\\CrudBasicoBlazor\\Client\\pasteleriaWebapp.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\currietechnologies.razor.sweetalert2\\5.5.0\\currietechnologies.razor.sweetalert2.5.5.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\microsoft.aspnetcore.authorization.7.0.5.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.5\\microsoft.aspnetcore.components.7.0.5.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.5\\microsoft.aspnetcore.components.analyzers.7.0.5.nupkg.sha512",

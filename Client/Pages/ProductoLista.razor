@@ -1,7 +1,9 @@
 ﻿@page "/Productolista"
 @inject HttpClient HttpClient
+@using CurrieTechnologies.Razor.SweetAlert2;
 @using pasteleriaWebapp.Shared
 @inject NavigationManager NavigationManager
+@inject SweetAlertService Swal
 
 
 
@@ -31,6 +33,7 @@ else
                     <td>@item.Descripcion</td>
                     <td>
                         <button class="btn btn-primary" @onclick="() => Editar(item.IdProducto)"><i class="oi oi-pencil"></i></button>
+                        <button class="btn btn-danger" @onclick="() => Eliminar(item.IdProducto)"><i class="oi oi-trash"></i></button>
                     </td>
                 </tr>
             }
@@ -46,8 +49,15 @@ else
 
     protected override async Task OnInitializedAsync()
     {
+        await CargarDatos();
+    }
+
+
+    private async Task CargarDatos()
+    {
         Productos = await HttpClient.GetFromJsonAsync<List<Producto>>("api/Productos");
     }
+
 
     private void CrearProducto()
     {
@@ -56,5 +66,24 @@ else
     private void Editar(int id)
     {
         NavigationManager.NavigateTo($"/productos/editar/{id}");
+    }
+
+    private async Task Eliminar(int id)
+    {
+        var resultado = await Swal.FireAsync(new SweetAlertOptions
+            {
+                Title = "Esta Seguro",
+                Text = "No podra revertir esta  situacion",
+                Icon = SweetAlertIcon.Question,
+                ConfirmButtonText = "Si,Eliminar",
+                CancelButtonText = "Cancelar",
+                ShowCancelButton = true,
+
+        });
+        if (resultado.IsConfirmed)
+        {
+            await HttpClient.DeleteAsync($"api/Productos/{id}");
+            await CargarDatos();
+        }
     }
 }

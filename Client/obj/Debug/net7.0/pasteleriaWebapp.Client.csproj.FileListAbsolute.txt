@@ -1670,3 +1670,7 @@ C:\Users\user\source\repos\CrudBasicoBlazor\Client\obj\Debug\net7.0\build-gz\cTT
 C:\Users\user\source\repos\CrudBasicoBlazor\Client\obj\Debug\net7.0\build-gz\vl5I+DoJ.gz
 C:\Users\user\source\repos\CrudBasicoBlazor\Client\obj\Debug\net7.0\build-gz\gXWzT3Wz.gz
 C:\Users\user\source\repos\CrudBasicoBlazor\Client\obj\Debug\net7.0\build-gz\TKCObj0x.gz
+C:\Users\user\source\repos\CrudBasicoBlazor\Client\bin\Debug\net7.0\wwwroot\_framework\CurrieTechnologies.Razor.SweetAlert2.dll
+C:\Users\user\source\repos\CrudBasicoBlazor\Client\bin\Debug\net7.0\wwwroot\_framework\CurrieTechnologies.Razor.SweetAlert2.dll.gz
+C:\Users\user\source\repos\CrudBasicoBlazor\Client\bin\Debug\net7.0\CurrieTechnologies.Razor.SweetAlert2.dll
+C:\Users\user\source\repos\CrudBasicoBlazor\Client\obj\Debug\net7.0\build-gz\yhHvm7ge.gz

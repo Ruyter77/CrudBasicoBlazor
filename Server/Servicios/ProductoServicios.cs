@@ -47,5 +47,15 @@ namespace pasteleriaWebapp.Server.Servicios
         {
             return listaProductos.Find(p => p.IdProducto == id);
         }
+
+        public void Eliminar(int id)
+        {
+            var registro = ObtenerPorId(id);
+            if(registro is not null)
+            {
+                listaProductos.Remove(registro);
+            }
+            
+        }
     }
 }
